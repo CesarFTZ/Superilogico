@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141414">
+  <title>Letras de SuperIlógico — Opus Yeah</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: system-ui, sans-serif;
+      background: #141414;
+      color: #fff7eb;
+      --yellow: #f3f64c;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { max-width: 48rem; margin-inline: auto; padding: clamp(.75rem, 4vw, 2.5rem); }
+    header { margin-bottom: 2rem; }
+    h1 { margin: .25rem 0 .5rem; font-size: clamp(2rem, 8vw, 3.75rem); line-height: 1.05; }
+    h2 { margin: 0 0 .75rem; font-size: clamp(1.15rem, 5vw, 1.6rem); }
+    p { margin: .5rem 0 0; color: #dedad0; }
+    .artist { color: var(--yellow); font-weight: 700; }
+    .songs { list-style: none; margin: 0; padding: 0; display: grid; gap: 2rem; }
+    a { color: var(--yellow); }
+    a:focus-visible { outline: 2px solid var(--yellow); outline-offset: 4px; }
+    .back { display: inline-flex; align-items: center; min-height: 3rem; }
+    .image-link { display: block; border-radius: .5rem; }
+    img { display: block; width: 100%; height: auto; border-radius: inherit; }
+    footer { margin-top: 1.5rem; }
+    @media (prefers-reduced-motion: no-preference) {
+      header { animation: rise-in 400ms ease-out; }
+      .image-link { transition: transform 160ms ease-out; }
+      .image-link:active { transform: scale(.985); }
+    }
+    @keyframes rise-in {
+      from { opacity: .65; transform: translateY(.5rem); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <a class="back" href="index.html">← Volver al EP</a>
+      <p class="artist">Opus Yeah</p>
+      <h1>Letras de SuperIlógico</h1>
+      <p>Toca una imagen para abrirla en tamaño completo.</p>
+    </header>
+    <ol class="songs" role="list">
+      <li>
+        <h2>01. Diferentes</h2>
+        <a class="image-link" href="assets/letra-1.webp" aria-label="Abrir la letra de Diferentes en tamaño completo">
+          <img src="assets/letra-1.webp" width="1003" height="1003" alt="Letra de Diferentes" decoding="async">
+        </a>
+      </li>
+      <li>
+        <h2>02. Recuperar el tiempo</h2>
+        <a class="image-link" href="assets/letra-2.webp" aria-label="Abrir la letra de Recuperar el tiempo en tamaño completo">
+          <img src="assets/letra-2.webp" width="1003" height="1003" alt="Letra de Recuperar el tiempo" loading="lazy" decoding="async">
+        </a>
+      </li>
+      <li>
+        <h2>03. SuperIlógico</h2>
+        <a class="image-link" href="assets/letra-3.webp" aria-label="Abrir la letra de SuperIlógico en tamaño completo">
+          <img src="assets/letra-3.webp" width="1003" height="1003" alt="Letra de SuperIlógico" loading="lazy" decoding="async">
+        </a>
+      </li>
+    </ol>
+    <footer><a class="back" href="index.html">← Volver al EP</a></footer>
+  </main>
+</body>
+</html>
